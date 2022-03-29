@@ -14,14 +14,14 @@
                 {!! Form::label('name', 'Nombre') !!}
                 {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'ingrese el Nombre de la Categoria']) !!}         
                 @error('name')
-                    <span class="text-danger">{{$message}}</span>
+                    <div class="alert alert-danger">{{ $message }}</div>                
                 @enderror       
             </div>
             <div class="from-group">
                 {!! Form::label('slug', 'Nombre') !!}
                 {!! Form::text('slug', null, ['class' => 'form-control', 'placeholder' => 'ingrese el Slug de la Categoria', 'readonly']) !!}                
                 @error('slug')
-                    <span class="text-danger">{{$message}}</span>
+                    <div class="alert alert-danger">{{ $message }}</div>
                 @enderror       
 
             </div>     
