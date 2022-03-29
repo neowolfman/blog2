@@ -248,16 +248,15 @@ return [
         ],
         [
             'text'        => 'Dashboard',
-            'url'         => 'admin/pages',
-            'icon'        => 'fas fa-tachometer-alt',
-            'label'       => 4,
-            'label_color' => 'success',
+            'route'        => 'admin.home', //''url'         => 'admin',
+            'icon'        => 'fas fa-tachometer-alt fa-fw',
+
         ],
-        ['header' => 'account_settings'],
+        ['header' => 'ADMINISTRADOR'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'text' => 'Categorias',
+            'route'  => 'admin.categories.index',
+            'icon' => 'fab fa-fw fa-buffer',
         ],
         [
             'text' => 'change_password',

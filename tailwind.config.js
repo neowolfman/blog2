@@ -1,5 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
-
+mode: "";
 module.exports = {
     content: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
